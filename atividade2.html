@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array com Três Valores</title>
+</head>
+<body>
+    <h1>Array com Três Valores</h1>
+    <button onclick="criarArray()">Criar Array</button>
+    <div id="resultado"></div>
+
+    <script>
+        function criarArray() {
+            let Array = [];
+            for (let i = 0; i < 3; i++) {
+                let valor = prompt(`Digite o valor ${i + 1}:`);
+                Array.push(valor);
+            }
+            document.getElementById("resultado").innerHTML = 
+                `<p>Array: [${Array.join(", ")}]</p>`;
+        }
+    </script>
+    
+</body>
+</html>
